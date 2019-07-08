@@ -1,0 +1,17 @@
+first if we want to schedule our task we used crontab
+1)used crontab -e
+*used it to write your script inside the crontab
+2)
+after used crontab -e
+i write my scheduling
+syntax
+min hour day-of-month month-of-year- day-of-week
+45 1 * * * backup.txt
+
+backup.sh (is my file in my home/usr/backup.txt)
+once i do i closed it 
+3)inside my file backup.txt 
+i write
+
+rsync -avz /usr/bin/df-h  /home/ankit/Downloads/
+here all disk usuage automatically schedule in diskusage.txt
